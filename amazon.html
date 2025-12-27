@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone | GitHub Learning</title>
+    <!-- Using Tailwind CSS via CDN for ease of use in teaching -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-[#131921] text-white p-2 flex items-center gap-4 sticky top-0 z-50">
+        <div class="p-2 border border-transparent hover:border-white cursor-pointer">
+            <h1 class="text-2xl font-bold italic">amazon</h1>
+        </div>
+        <div class="flex-grow flex items-center bg-white rounded-md overflow-hidden">
+            <input type="text" class="w-full p-2 text-black outline-none" placeholder="Search GitHub Amazon...">
+            <button class="bg-[#febd69] p-3 text-black hover:bg-[#f3a847]">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div class="hidden md:flex gap-4 items-center">
+            <div class="p-2 border border-transparent hover:border-white cursor-pointer">
+                <p class="text-xs">Hello, Sign in</p>
+                <p class="font-bold">Account & Lists</p>
+            </div>
+            <div class="p-2 border border-transparent hover:border-white cursor-pointer">
+                <p class="text-xs">Returns</p>
+                <p class="font-bold">& Orders</p>
+            </div>
+            <div class="p-2 border border-transparent hover:border-white cursor-pointer relative">
+                <i class="fa fa-shopping-cart text-3xl"></i>
+                <span class="absolute top-1 right-1 bg-orange-500 rounded-full px-1 text-xs">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <div class="bg-gradient-to-b from-transparent to-gray-100 absolute w-full h-32 bottom-0"></div>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/PC_Hero_2x._CB623514332_.jpg" 
+             alt="Banner" class="w-full object-cover h-[300px]" onerror="this.src='https://via.placeholder.com/1200x300?text=Amazon+Banner+Placeholder'">
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto -mt-32 relative z-10 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-6 shadow-sm flex flex-col">
+                <h3 class="font-bold text-xl mb-2">Learning GitHub</h3>
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="h-48 object-contain mb-4" alt="GitHub Logo">
+                <p class="text-blue-600 hover:text-orange-600 cursor-pointer mt-auto">Shop now</p>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white p-6 shadow-sm flex flex-col">
+                <h3 class="font-bold text-xl mb-2">Electronics</h3>
+                <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_SL1500_.jpg" class="h-48 object-contain mb-4" alt="Electronics">
+                <p class="text-blue-600 hover:text-orange-600 cursor-pointer mt-auto">See more</p>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white p-6 shadow-sm flex flex-col">
+                <h3 class="font-bold text-xl mb-2">Home Decor</h3>
+                <img src="https://m.media-amazon.com/images/I/61m1f9H1uGL._AC_SL1001_.jpg" class="h-48 object-contain mb-4" alt="Home Decor">
+                <p class="text-blue-600 hover:text-orange-600 cursor-pointer mt-auto">Discover styles</p>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="bg-white p-6 shadow-sm flex flex-col">
+                <h3 class="font-bold text-xl mb-2">Sign in for the best experience</h3>
+                <button class="bg-[#ffd814] w-full py-2 rounded-lg shadow-md hover:bg-[#f7ca00] mt-4">Sign in securely</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 bg-[#232f3e] text-white p-10">
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold mb-4">Get to Know Us</h4>
+                <ul class="text-sm space-y-2 text-gray-300">
+                    <li class="hover:underline cursor-pointer">About Amazon</li>
+                    <li class="hover:underline cursor-pointer">GitHub Guide</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">GitHub Learning</h4>
+                <ul class="text-sm space-y-2 text-gray-300">
+                    <li class="hover:underline cursor-pointer">How to Fork</li>
+                    <li class="hover:underline cursor-pointer">Pull Requests</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-10 border-t border-gray-600 pt-6">
+            <p class="text-sm text-gray-400">© 2025, Amazon Clone (For Educational Use)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
